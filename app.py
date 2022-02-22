@@ -159,14 +159,14 @@ def event_handle(event,json_line):
 
 อาหารพร้อมส่งทุกรายการสนใจอาหารสั่งซื้อหรือสอบถามได้เลยค่ะ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "สั่งข้ามผัดหมู 2 กล่องค่ะ" :
+        elif msg == "สั่งข้าวผัดหมู 2 กล่องค่ะ" :
             replyObj = TextSendMessage(text="โอเคค่ะ รอสักครู่นะคะ ทางร้านเรากำลังทำให้ค่ะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "ทั้งหมดกี่บาทคะ" :
             replyObj = TextSendMessage(text="60 บาทค่ะ โอนหรือเก็บเงินปลายทางคะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เก็บเงินปลายทางค่ะ" :
-            replyObj = TextSendMessage(text="โอเคค่ะ ทางร้านเรากำลังจัดส่งอาหารให้นะคะ")
+            replyObj = TextSendMessage(text="โอเคค่ะ ทางร้านเราทำอาหารให้ลูกค้าเสร็จแล้วกำลังจัดส่งอาหารให้นะคะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "โอเคค่ะ" :
             replyObj = TextSendMessage(text="เมื่อลูกค้าได้รับอาหารแล้ว รบกวนถ่ายรีวิวอาหารให้หน่อยนะคะ เป็นการช่วยกระจายเสียงว่าร้านเราส่งอาหารจริง และอร่อยใช้ของที่มีคุณภาพค่ะ ทานอาหารให้อร่อยนะคะ ขอบคุณค่ะ")
