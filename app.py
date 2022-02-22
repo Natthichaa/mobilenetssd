@@ -169,7 +169,7 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="โอเคค่ะ ทางร้านเราทำอาหารให้ลูกค้าเสร็จแล้วกำลังจัดส่งอาหารให้นะคะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "โอเคค่ะ" :
-            replyObj = TextSendMessage(text="เมื่อลูกค้าได้รับอาหารแล้ว รบกวนถ่ายรีวิวอาหารให้หน่อยนะคะ เป็นการช่วยกระจายเสียงว่าร้านเราส่งอาหารจริง และอร่อยใช้ของที่มีคุณภาพค่ะ ทานอาหารให้อร่อยนะคะ ขอบคุณค่ะ")
+            replyObj = TextSendMessage(text="เมื่อลูกค้าได้รับอาหารแล้ว รบกวนถ่ายรีวิวอาหารให้หน่อยนะคะ ว่าร้านเราส่งอาหารจริง และอร่อยใช้ของที่มีคุณภาพค่ะ ทานอาหารให้อร่อยนะคะ ขอบคุณค่ะ")
         else :
             headers = request.headers
             json_headers = ({k:v for k, v in headers.items()})
